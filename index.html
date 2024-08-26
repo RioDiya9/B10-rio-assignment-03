@@ -18,9 +18,16 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
-              }
-            }
+                "primary":"#ABEF5F",
+                "secondry":"#212121",
+                "body":"#FFFFFF",
+                "accent":"#494949",
+                "card":"#EFDA6E",
+              },
+            },
+            fontFamily:{
+              'Manrope': 'Manrope'
+            },
           }
         }
       </script>
@@ -34,16 +41,17 @@
 <body class="font-Manrope">
 <!-- header start here -->
    <header>
-    <nav class=" items-startflex- row">
+    <section class="w-screen h-screen text-secondry">
+    <nav class=" container  max-auto flex justify-between items-center py-5">
       <div class="navbar bg-base-100 ">
               <a class="btn w-0/1 h-0/1 bg-lime-300 fa-solid fa-arrow-up rotate-45 rounded-full ml-20"></a>
               <a class="btn btn-ghost font-extrabold text-2xl text-black md:text-black ">Rinterio</a>
-              <ul class="flex justify-between items-center gap-6 ml-20">
-                  <li>Home</li>
-                  <li>Services</li>
-                  <li>Portfolio</li>
-                  <li>Blogs</li>
-                  <li>Contact Us</li>
+              <ul class="flex justify-center items-center gap-10 text-xl">
+                  <li><a href="#"></a>Home</li>
+                  <li><a href="#"></a>Services</li>
+                  <li><a href="#"></a>Portfolio</li>
+                  <li><a href="#"></a>Blogs</li>
+                  <li><a href="#"></a>Contact Us</li>
               </ul>
                 <button class="btn btn-ghost btn-circle ml-20">
                   <svg
@@ -72,13 +80,22 @@
                       d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
             </button>
-            <div class=" item-end">
-                <button class="btn rounded-full btn w-1/1 h-1/1 btn-width font-extrabold text-2xl bg-lime-300  md:text-black ">Book Consult
+            <li class="btn bg-lime-300 text-body px-5 py-3 rounded-full font-semibold "><a href="#">Book Consult</a></li>
                 <a class="btn w-1/1 h-1/1 fa-solid fa-arrow-up bg-neutral-900 rotate-45 rounded-full" style="color:#ffffff ;"></a>
                 </button>
             </div>
+
       </div>
+    </section>
+      <section>
+      <div>
+          <img src="/assets/banner.png" alt="this is a 1st image">
+          <h1>A barn house of this design has a striking appearance</h1>
+          <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+      </div>
+    </section>
     </nav>
+
   </header>
   </main>
     <!-- header end here -->
